@@ -1,0 +1,25 @@
+{
+  "css.customData": [".vscode/tailwind.json"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "ui"
+  ],
+  "cSpell.words": [
+    "bignumber",
+    "timeframe",
+    "timeframes"
+  ]
+}
