@@ -1,4 +1,4 @@
-import { defineCollection, defineContentConfig } from '@nuxt/content';
+import { defineCollection, defineContentConfig, z } from '@nuxt/content';
 
 export default defineContentConfig({
   collections: {
@@ -8,6 +8,17 @@ export default defineContentConfig({
         include: 'projects/*.md',
         prefix: '/projects',
       },
+      schema: z.object({
+        warning: z.string().optional(),
+        isOffline: z.boolean().optional(),
+        url: z.string().url(),
+        images: z.array(
+          z.object({
+            src: z.string(),
+            alt: z.string(),
+          })
+        ),
+      }),
     }),
     sections: defineCollection({
       type: 'page',
