@@ -1,1 +1,78 @@
+@import './fonts.css';
+@import './transitions.css';
+@import './utils.css';
+
 @import 'tailwindcss';
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-2xs: 360px;
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1680px;
+
+  --color-*: initial;
+  --color-black: oklch(20% 0 0);
+  --color-white-muted: oklch(80% 0 0);
+  --color-white: oklch(95% 0 0);
+  --color-primary: oklch(60% 0.2 24);
+
+  --z-index-below: -1;
+  --z-index-base: 0;
+  --z-index-above: 1;
+  --z-index-layout: 10;
+  --z-index-sticky: 20;
+  --z-index-dropdown: 30;
+  --z-index-popover: 40;
+  --z-index-overlay: 50;
+  --z-index-modal: 60;
+  --z-index-dialog: 70;
+  --z-index-toast: 80;
+  --z-index-alert: 90;
+  --z-index-fullscreen: 100;
+  --z-index-highest: 9999;
+
+  --radius-inherit: inherit;
+
+  --font-CMU-Bright: CMU Bright, sans-serif;
+  --font-CMU-Typewriter-Text: CMU Typewriter Text, monospace;
+  --font-CMU-Serif-Upright: CMU Serif Upright, serif;
+
+  --transition-property-box: border-width, margin, padding;
+  --transition-property-composite: opacity, transform, translate, scale, rotate;
+  --transition-property-size: width, height, min-width, min-height, max-width, max-height, background-size;
+}
+
+@custom-variant dark (&:where(.dark, .dark *, .dark-mode, .dark-mode *));
+
+html {
+  @apply bg-black;
+}
+
+body {
+  @apply font-CMU-Bright selection:bg-primary text-white selection:text-white;
+}
+
+a:not([disabled]),
+button:not([disabled]) {
+  cursor: pointer;
+}
+
+input {
+  min-width: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

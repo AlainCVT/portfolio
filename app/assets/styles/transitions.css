@@ -1,0 +1,337 @@
+:is(#__nuxt, #teleports) [class*='-100-enter-active'],
+:is(#__nuxt, #teleports) [class*='-100-leave-active'] {
+  @apply duration-100;
+}
+
+:is(#__nuxt, #teleports) [class*='-200-enter-active'],
+:is(#__nuxt, #teleports) [class*='-200-leave-active'] {
+  @apply duration-200;
+}
+
+:is(#__nuxt, #teleports) [class*='-300-enter-active'],
+:is(#__nuxt, #teleports) [class*='-300-leave-active'] {
+  @apply duration-300;
+}
+
+:is(#__nuxt, #teleports) [class*='-400-enter-active'],
+:is(#__nuxt, #teleports) [class*='-400-leave-active'] {
+  @apply duration-400;
+}
+
+:is(#__nuxt, #teleports) [class*='-500-enter-active'],
+:is(#__nuxt, #teleports) [class*='-500-leave-active'] {
+  @apply duration-500;
+}
+
+:is(#__nuxt, #teleports) [class*='-600-enter-active'],
+:is(#__nuxt, #teleports) [class*='-600-leave-active'] {
+  @apply duration-600;
+}
+
+:is(#__nuxt, #teleports) [class*='-700-enter-active'],
+:is(#__nuxt, #teleports) [class*='-700-leave-active'] {
+  @apply duration-700;
+}
+
+:is(#__nuxt, #teleports) [class*='-800-enter-active'],
+:is(#__nuxt, #teleports) [class*='-800-leave-active'] {
+  @apply duration-800;
+}
+
+:is(#__nuxt, #teleports) [class*='-900-enter-active'],
+:is(#__nuxt, #teleports) [class*='-900-leave-active'] {
+  @apply duration-900;
+}
+
+:is(#__nuxt, #teleports) [class*='-1000-enter-active'],
+:is(#__nuxt, #teleports) [class*='-1000-leave-active'] {
+  @apply duration-1000;
+}
+
+/* Fade */
+
+.fade-100-enter-active,
+.fade-100-leave-active,
+.fade-200-enter-active,
+.fade-200-leave-active,
+.fade-300-enter-active,
+.fade-300-leave-active,
+.fade-400-enter-active,
+.fade-400-leave-active,
+.fade-500-enter-active,
+.fade-500-leave-active,
+.fade-600-enter-active,
+.fade-600-leave-active,
+.fade-700-enter-active,
+.fade-700-leave-active,
+.fade-800-enter-active,
+.fade-800-leave-active,
+.fade-900-enter-active,
+.fade-900-leave-active,
+.fade-1000-enter-active,
+.fade-1000-leave-active {
+  @apply transition-opacity ease-in-out;
+}
+
+.fade-100-enter-from,
+.fade-100-leave-to,
+.fade-200-enter-from,
+.fade-200-leave-to,
+.fade-300-enter-from,
+.fade-300-leave-to,
+.fade-400-enter-from,
+.fade-400-leave-to,
+.fade-500-enter-from,
+.fade-500-leave-to,
+.fade-600-enter-from,
+.fade-600-leave-to,
+.fade-700-enter-from,
+.fade-700-leave-to,
+.fade-800-enter-from,
+.fade-800-leave-to,
+.fade-900-enter-from,
+.fade-900-leave-to,
+.fade-1000-enter-from,
+.fade-1000-leave-to {
+  @apply opacity-0;
+}
+
+/* Fade out */
+
+.fade-out-100-enter-active,
+.fade-out-100-leave-active,
+.fade-out-200-enter-active,
+.fade-out-200-leave-active,
+.fade-out-300-enter-active,
+.fade-out-300-leave-active,
+.fade-out-400-enter-active,
+.fade-out-400-leave-active,
+.fade-out-500-enter-active,
+.fade-out-500-leave-active,
+.fade-out-600-enter-active,
+.fade-out-600-leave-active,
+.fade-out-700-enter-active,
+.fade-out-700-leave-active,
+.fade-out-800-enter-active,
+.fade-out-800-leave-active,
+.fade-out-900-enter-active,
+.fade-out-900-leave-active,
+.fade-out-1000-enter-active,
+.fade-out-1000-leave-active {
+  @apply transition-composite origin-center ease-out;
+}
+
+.fade-out-100-enter-from,
+.fade-out-100-leave-to,
+.fade-out-200-enter-from,
+.fade-out-200-leave-to,
+.fade-out-300-enter-from,
+.fade-out-300-leave-to,
+.fade-out-400-enter-from,
+.fade-out-400-leave-to,
+.fade-out-500-enter-from,
+.fade-out-500-leave-to,
+.fade-out-600-enter-from,
+.fade-out-600-leave-to,
+.fade-out-700-enter-from,
+.fade-out-700-leave-to,
+.fade-out-800-enter-from,
+.fade-out-800-leave-to,
+.fade-out-900-enter-from,
+.fade-out-900-leave-to,
+.fade-out-1000-enter-from,
+.fade-out-1000-leave-to {
+  @apply scale-75 opacity-0;
+}
+
+/* Fade up */
+
+.fade-up-100-enter-active,
+.fade-up-100-leave-active,
+.fade-up-200-enter-active,
+.fade-up-200-leave-active,
+.fade-up-300-enter-active,
+.fade-up-300-leave-active,
+.fade-up-400-enter-active,
+.fade-up-400-leave-active,
+.fade-up-500-enter-active,
+.fade-up-500-leave-active,
+.fade-up-600-enter-active,
+.fade-up-600-leave-active,
+.fade-up-700-enter-active,
+.fade-up-700-leave-active,
+.fade-up-800-enter-active,
+.fade-up-800-leave-active,
+.fade-up-900-enter-active,
+.fade-up-900-leave-active,
+.fade-up-1000-enter-active,
+.fade-up-1000-leave-active {
+  @apply transition-composite origin-center ease-in-out;
+}
+
+.fade-up-100-enter-from,
+.fade-up-100-leave-to,
+.fade-up-200-enter-from,
+.fade-up-200-leave-to,
+.fade-up-300-enter-from,
+.fade-up-300-leave-to,
+.fade-up-400-enter-from,
+.fade-up-400-leave-to,
+.fade-up-500-enter-from,
+.fade-up-500-leave-to,
+.fade-up-600-enter-from,
+.fade-up-600-leave-to,
+.fade-up-700-enter-from,
+.fade-up-700-leave-to,
+.fade-up-800-enter-from,
+.fade-up-800-leave-to,
+.fade-up-900-enter-from,
+.fade-up-900-leave-to,
+.fade-up-1000-enter-from,
+.fade-up-1000-leave-to {
+  @apply translate-y-1 opacity-0;
+}
+
+/* Fade down */
+
+.fade-down-100-enter-active,
+.fade-down-100-leave-active,
+.fade-down-200-enter-active,
+.fade-down-200-leave-active,
+.fade-down-300-enter-active,
+.fade-down-300-leave-active,
+.fade-down-400-enter-active,
+.fade-down-400-leave-active,
+.fade-down-500-enter-active,
+.fade-down-500-leave-active,
+.fade-down-600-enter-active,
+.fade-down-600-leave-active,
+.fade-down-700-enter-active,
+.fade-down-700-leave-active,
+.fade-down-800-enter-active,
+.fade-down-800-leave-active,
+.fade-down-900-enter-active,
+.fade-down-900-leave-active,
+.fade-down-1000-enter-active,
+.fade-down-1000-leave-active {
+  @apply transition-composite origin-center ease-in-out;
+}
+
+.fade-down-100-enter-from,
+.fade-down-100-leave-to,
+.fade-down-200-enter-from,
+.fade-down-200-leave-to,
+.fade-down-300-enter-from,
+.fade-down-300-leave-to,
+.fade-down-400-enter-from,
+.fade-down-400-leave-to,
+.fade-down-500-enter-from,
+.fade-down-500-leave-to,
+.fade-down-600-enter-from,
+.fade-down-600-leave-to,
+.fade-down-700-enter-from,
+.fade-down-700-leave-to,
+.fade-down-800-enter-from,
+.fade-down-800-leave-to,
+.fade-down-900-enter-from,
+.fade-down-900-leave-to,
+.fade-down-1000-enter-from,
+.fade-down-1000-leave-to {
+  @apply -translate-y-1 opacity-0;
+}
+
+/* Fade left */
+
+.fade-left-100-enter-active,
+.fade-left-100-leave-active,
+.fade-left-200-enter-active,
+.fade-left-200-leave-active,
+.fade-left-300-enter-active,
+.fade-left-300-leave-active,
+.fade-left-400-enter-active,
+.fade-left-400-leave-active,
+.fade-left-500-enter-active,
+.fade-left-500-leave-active,
+.fade-left-600-enter-active,
+.fade-left-600-leave-active,
+.fade-left-700-enter-active,
+.fade-left-700-leave-active,
+.fade-left-800-enter-active,
+.fade-left-800-leave-active,
+.fade-left-900-enter-active,
+.fade-left-900-leave-active,
+.fade-left-1000-enter-active,
+.fade-left-1000-leave-active {
+  @apply transition-composite origin-center ease-in-out;
+}
+
+.fade-left-100-enter-from,
+.fade-left-100-leave-to,
+.fade-left-200-enter-from,
+.fade-left-200-leave-to,
+.fade-left-300-enter-from,
+.fade-left-300-leave-to,
+.fade-left-400-enter-from,
+.fade-left-400-leave-to,
+.fade-left-500-enter-from,
+.fade-left-500-leave-to,
+.fade-left-600-enter-from,
+.fade-left-600-leave-to,
+.fade-left-700-enter-from,
+.fade-left-700-leave-to,
+.fade-left-800-enter-from,
+.fade-left-800-leave-to,
+.fade-left-900-enter-from,
+.fade-left-900-leave-to,
+.fade-left-1000-enter-from,
+.fade-left-1000-leave-to {
+  @apply translate-x-1 opacity-0;
+}
+
+/* Fade right RIGHT */
+
+.fade-right-100-enter-active,
+.fade-right-100-leave-active,
+.fade-right-200-enter-active,
+.fade-right-200-leave-active,
+.fade-right-300-enter-active,
+.fade-right-300-leave-active,
+.fade-right-400-enter-active,
+.fade-right-400-leave-active,
+.fade-right-500-enter-active,
+.fade-right-500-leave-active,
+.fade-right-600-enter-active,
+.fade-right-600-leave-active,
+.fade-right-700-enter-active,
+.fade-right-700-leave-active,
+.fade-right-800-enter-active,
+.fade-right-800-leave-active,
+.fade-right-900-enter-active,
+.fade-right-900-leave-active,
+.fade-right-1000-enter-active,
+.fade-right-1000-leave-active {
+  @apply transition-composite origin-center ease-in-out;
+}
+
+.fade-right-100-enter-from,
+.fade-right-100-leave-to,
+.fade-right-200-enter-from,
+.fade-right-200-leave-to,
+.fade-right-300-enter-from,
+.fade-right-300-leave-to,
+.fade-right-400-enter-from,
+.fade-right-400-leave-to,
+.fade-right-500-enter-from,
+.fade-right-500-leave-to,
+.fade-right-600-enter-from,
+.fade-right-600-leave-to,
+.fade-right-700-enter-from,
+.fade-right-700-leave-to,
+.fade-right-800-enter-from,
+.fade-right-800-leave-to,
+.fade-right-900-enter-from,
+.fade-right-900-leave-to,
+.fade-right-1000-enter-from,
+.fade-right-1000-leave-to {
+  @apply -translate-x-1 opacity-0;
+}

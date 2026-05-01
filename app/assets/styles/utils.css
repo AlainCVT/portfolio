@@ -1,0 +1,41 @@
+@utility link {
+  background: linear-gradient(to top, var(--color-white) 0%, var(--color-white) 1px, transparent 1px) no-repeat center
+    bottom / 100% 100%;
+
+  &:hover,
+  &:focus-visible {
+    background-size: 0% 100%;
+  }
+
+  @apply focus-visible:outline-primary hover:text-primary rounded-sm outline-2 outline-transparent transition-[background-size,color] duration-200 active:text-white;
+}
+
+@utility content-renderer {
+  @apply text-white-muted grid content-start gap-4;
+
+  a:not([class]),
+  em:not([class]),
+  strong:not([class]) {
+    @apply text-white;
+  }
+
+  code:not([class]) {
+    @apply font-CMU-Typewriter-Text;
+  }
+
+  a:not([class]) {
+    @apply link;
+  }
+
+  p + ul:not([class]) {
+    @apply -mt-4;
+  }
+
+  ul li:not([class]) {
+    @apply before:mr-2 before:mb-px before:inline-block before:size-1.5 before:rotate-45 before:border-2 before:border-white;
+  }
+
+  li ul:not([class]) {
+    @apply pl-4;
+  }
+}
