@@ -1,3 +1,8 @@
+@utility group-delay-* {
+  --group-delay: calc(1ms * --value('75', '100', '150', '200', '300', '500', '700', '1000', number));
+  --group-delay: calc(1ms * --value([number]));
+}
+
 @utility link {
   background: linear-gradient(to top, var(--color-white) 0%, var(--color-white) 1px, transparent 1px) no-repeat center
     bottom / 100% 100%;
@@ -38,4 +43,16 @@
   li ul:not([class]) {
     @apply pl-4;
   }
+}
+
+@utility sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
