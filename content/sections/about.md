@@ -7,7 +7,7 @@ title: About me
 {{ $doc.title }}
 
 #heading
-::ui-diamond-button{href="/CV-Alain_CAO_VAN_TRUONG.pdf" label="CV" icon="simple-icons:readdotcv"}
+::ui-diamond-button{href="/CV-Alain_CAO_VAN_TRUONG-en.pdf" label="CV" icon="simple-icons:readdotcv"}
 ::
 
 #default
@@ -18,7 +18,7 @@ I have had the opportunity to work with multiple teams to create products that m
 
 Moreover, I would love to level up in _back-end development_ and become a _full-stack developer_.
 I have experience with multiple frameworks, but I am particularly interested in _type safety_ in web frameworks.
-Thus, I am currently learning **Hono.js**, and I also plan to learn **AdonisJS** since these frameworks are based on **TypeScript**.
+Thus, I am currently learning **Hono.js** and **Nest.js**, and I also plan to learn **AdonisJS** since these frameworks are based on **TypeScript**.
 I am open to learning more programming languages and frameworks when opportunities arise, even though I have had short experiences with **Python** and **PHP** in the past.
 
 I started writing my first lines of code at <a href="https://pia.ac-paris.fr/serail/jcms/s1_2080084/" rel="noopener noreferrer" target="_blank" title="Lycée Saint-Louis">Lycée Saint-Louis</a> with **Python**, as I am a former _scientific student_, and I still love learning about **mathematics**, **physics**, and **computer science**.
