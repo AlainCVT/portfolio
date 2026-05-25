@@ -13,7 +13,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'I, Alain Cao Van Truong, am a full-stack web developer based near Paris, France. I am specialized in front-end development with Vue.js, Nuxt.js, and Tailwind CSS, and I would love to level up in back-end development with Node.js frameworks such as Express.jsn Hono.js or AdonisJS.',
+            'I am a full-stack web developer based near Paris, France. I am specialized in front-end development with Vue.js, Nuxt.js, and Tailwind CSS, and I would love to level up in back-end development with Node.js frameworks such as Hono, NestJS or AdonisJS.',
         },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ],
