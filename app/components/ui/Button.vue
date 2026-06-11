@@ -11,6 +11,7 @@
       href?: string;
       title?: string;
       to?: Navigation;
+      direction?: 'top' | 'bottom' | 'left' | 'right';
       label?: string;
       screenReader?: string;
       isDisabled?: boolean;
@@ -20,6 +21,7 @@
       href: undefined,
       title: undefined,
       to: undefined,
+      direction: 'top',
       label: '',
       screenReader: '',
     }
@@ -47,7 +49,13 @@
     }"
   >
     <span
-      class="relative flex size-full overflow-hidden *:transition-transform *:duration-400 *:group-hover:-translate-y-full"
+      class="relative flex size-full overflow-hidden *:transition-transform *:duration-400"
+      :class="{
+        '*:group-hover:-translate-y-full': direction === 'top',
+        '*:group-hover:-translate-x-full': direction === 'left',
+        '*:group-hover:translate-y-full': direction === 'bottom',
+        '*:group-hover:translate-x-full': direction === 'right',
+      }"
     >
       <span class="flex size-full items-center justify-center px-2 text-white">
         <slot
@@ -57,10 +65,14 @@
         <template v-else>{{ label }}</template>
       </span>
       <span
-        class="before:transition-size absolute top-full flex size-full items-center justify-center px-2 text-black before:absolute before:size-full before:bg-white before:duration-400 group-active:before:size-[calc(100%-0.25rem)]"
+        class="before:transition-size absolute flex size-full items-center justify-center px-2 text-black before:absolute before:size-full before:bg-white before:duration-400 group-active:before:size-[calc(100%-0.25rem)]"
         :class="{
           'after:absolute after:inset-0 after:flex after:items-center after:justify-center after:content-[attr(data-label)]':
             label,
+          'top-full': direction === 'top',
+          'left-full': direction === 'left',
+          'bottom-full': direction === 'bottom',
+          'right-full': direction === 'right',
         }"
         :data-label="label"
       >

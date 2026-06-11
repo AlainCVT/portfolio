@@ -30,6 +30,7 @@
     <Transition name="fade-400">
       <div
         v-if="isGalleryFilled"
+        :key="currentGalleryImage?.src"
         class="absolute flex size-full items-center justify-center"
       >
         <img
@@ -70,6 +71,7 @@
             <UiButton
               v-if="isGalleryFilled"
               class="pointer-events-auto text-xl"
+              direction="left"
               screen-reader="Previous"
               @click="selectPreviousImage()"
             >
@@ -80,6 +82,7 @@
             <UiButton
               v-if="isGalleryFilled"
               class="pointer-events-auto text-xl"
+              direction="right"
               screen-reader="Next"
               @click="selectNextImage()"
             >
