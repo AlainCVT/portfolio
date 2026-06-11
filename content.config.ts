@@ -9,6 +9,7 @@ export default defineContentConfig({
         prefix: '/projects',
       },
       schema: z.object({
+        company: z.string().optional(),
         warning: z.string().optional(),
         isOffline: z.boolean().optional(),
         url: z.string().url(),
@@ -18,6 +19,7 @@ export default defineContentConfig({
             alt: z.string(),
           })
         ),
+        tools: z.array(z.string()),
       }),
     }),
     sections: defineCollection({

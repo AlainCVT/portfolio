@@ -26,13 +26,40 @@
       />
     </div>
     <div class="grid">
-      <h3 class="inline-block font-semibold text-white">{{ project.title }}</h3>
+      <h3 class="inline-block text-white">
+        <span class="font-semibold">
+          {{ project.title }}
+        </span>
+        <template v-if="project.company">
+          {{ ' ' }}
+          <span class="text-white-muted">at</span>
+          {{ project.company }}
+        </template>
+      </h3>
       <p class="text-white-muted inline italic">{{ project.description }}</p>
     </div>
-    <ContentRenderer
-      class="content-renderer mb-4 grow"
-      :value="project"
-    />
+    <div class="mb-4 grid grow content-start gap-4">
+      <ContentRenderer
+        class="content-renderer"
+        :value="project"
+      />
+      <div
+        v-if="project.tools.length"
+        class="content-renderer"
+      >
+        <p>
+          <strong>Tools:</strong>
+        </p>
+        <ul>
+          <li
+            v-for="(tool, i) in project.tools"
+            :key="`tool-${i}`"
+          >
+            <code>{{ tool }}</code>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="grid gap-2">
       <div class="grid">
         <span
