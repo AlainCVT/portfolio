@@ -1,5 +1,5 @@
 ---
-title: Assoïe Louvart
+title: Assoïe Louvart’s portfolio
 description: Portfolio website for a UX/UI and product designer
 isOffline: true
 url: https://assoie-louvart.com

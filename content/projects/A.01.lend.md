@@ -34,6 +34,7 @@ tools:
   - Vitest
   - Playwright
   - Tailwind CSS
+  - Valibot
   - Express.js (Discord bot)
   - Golang (RESTful API)
 ---

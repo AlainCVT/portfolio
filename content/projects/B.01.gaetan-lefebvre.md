@@ -1,5 +1,5 @@
 ---
-title: Gaëtan Lefebvre
+title: Gaëtan Lefebvre’s portfolio
 description: Portfolio website for a product and motion designer
 isOffline: true
 url: https://gaetan-lefebvre.com

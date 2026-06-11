@@ -3,6 +3,7 @@
 
   defineProps<{
     project: ProjectsCollectionItem;
+    isReversed?: boolean;
   }>();
 
   const target = useTemplateRef('target');
@@ -17,7 +18,10 @@
     :key="project.id"
     class="relative flex flex-col justify-items-start gap-6"
   >
-    <div class="absolute top-0 right-full bottom-0 flex w-6 justify-center">
+    <div
+      class="absolute top-0 right-full bottom-0 flex w-6 justify-center"
+      :class="{ 'sm:left-full': isReversed }"
+    >
       <UiLine
         class="text-white"
         :is-active="targetIsVisible"
