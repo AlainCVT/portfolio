@@ -12,7 +12,7 @@ export default defineContentConfig({
         company: z.string().optional(),
         warning: z.string().optional(),
         isOffline: z.boolean().optional(),
-        url: z.string().url(),
+        url: z.string().url().optional(),
         images: z.array(
           z.object({
             src: z.string(),

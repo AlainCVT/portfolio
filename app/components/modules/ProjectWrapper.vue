@@ -71,7 +71,7 @@
           class="text-white-muted italic"
         >
           <span class="font-semibold text-white">NB:</span>
-          this website is no longer available
+          the website is no longer available online
         </span>
         <span
           v-if="project.warning"
@@ -92,7 +92,7 @@
           View gallery
         </UiButton>
         <UiButton
-          v-if="!project.isOffline"
+          v-if="!project.isOffline && project.url"
           :href="project.url"
           :title="project.title"
           label="Visit project"
