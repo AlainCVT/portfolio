@@ -3,6 +3,7 @@ title: Assoïe Louvart’s portfolio
 description: Portfolio website for a UX/UI and product designer
 isOffline: true
 url: https://assoie-louvart.com
+source: https://github.com/AlainCVT/Assoie_Louvart-portfolio
 images:
   - src: /images/assoie-louvart/home-yukey.png
     alt: Yukey project on home page

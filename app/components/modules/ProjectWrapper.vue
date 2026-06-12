@@ -97,6 +97,12 @@
           :title="project.title"
           label="Visit project"
         />
+        <UiButton
+          v-if="project.source"
+          :href="project.source"
+          :title="project.title"
+          label="Visit source code"
+        />
       </div>
     </div>
   </article>

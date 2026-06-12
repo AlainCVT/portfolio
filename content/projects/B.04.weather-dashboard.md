@@ -1,6 +1,7 @@
 ---
 title: Weather dashboard
 description: Dashboard that displays weather information based on OpenWeather API
+source: https://github.com/AlainCVT/weather-dashboard
 images:
   - src: /images/weather-dashboard/1-dark.png
     alt: Empty data (dark theme)

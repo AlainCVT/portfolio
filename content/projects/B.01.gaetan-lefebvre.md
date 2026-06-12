@@ -3,6 +3,7 @@ title: Gaëtan Lefebvre’s portfolio
 description: Portfolio website for a product and motion designer
 isOffline: true
 url: https://gaetan-lefebvre.com
+source: https://github.com/AlainCVT/Gaetan-Lefebvre_portfolio
 images:
   - src: /images/gaetan-lefebvre/home-green.png
     alt: Home page (green theme)
