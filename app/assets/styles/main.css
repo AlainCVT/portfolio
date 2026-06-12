@@ -50,7 +50,7 @@
 @custom-variant dark (&:where(.dark, .dark *, .dark-mode, .dark-mode *));
 
 html {
-  @apply bg-black;
+  @apply scrollbar-thumb-primary bg-black;
 }
 
 body {
