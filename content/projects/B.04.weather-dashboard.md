@@ -8,17 +8,25 @@ images:
   - src: /images/weather-dashboard/1-light.png
     alt: Empty data (light theme)
   - src: /images/weather-dashboard/2-dark.png
-    alt: Selected location, part 1 (dark theme)
+    alt: Location dropdown (dark theme)
   - src: /images/weather-dashboard/2-light.png
-    alt: Selected location, part 1 (light theme)
+    alt: Location dropdown (light theme)
   - src: /images/weather-dashboard/3-dark.png
-    alt: Selected location, part 2 (dark theme)
+    alt: Map type dropdown (dark theme)
   - src: /images/weather-dashboard/3-light.png
-    alt: Selected location, part 2 (light theme)
+    alt: Map type dropdown (light theme)
   - src: /images/weather-dashboard/4-dark.png
-    alt: Map type selected (dark theme)
+    alt: Selected location, part 1 (dark theme)
   - src: /images/weather-dashboard/4-light.png
-    alt: Map type selected (light theme)
+    alt: Selected location, part 1 (light theme)
+  - src: /images/weather-dashboard/5-dark.png
+    alt: Selected location, part 2 (dark theme)
+  - src: /images/weather-dashboard/5-light.png
+    alt: Selected location, part 2 (light theme)
+  - src: /images/weather-dashboard/6-dark.png
+    alt: Selected map type (dark theme)
+  - src: /images/weather-dashboard/6-light.png
+    alt: Selected map type (light theme)
 tools:
   - React 19
   - Tailwind CSS
